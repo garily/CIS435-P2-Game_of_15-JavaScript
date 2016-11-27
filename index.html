@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" href="styles/main.css" src="http://necolas.github.io/normalize.css">
+		<title>Project 2 - Game of 15</title>
+		<script type="text/javascript" src="scripts/game.js"></script>
+	</head>
+	
+	<body onload="shuffle()">
+		<h2>Game of 15</h2>
+		<p id="time">Time used: 0 s.</p>
+		<p id="moves">Move(s): 0.</p>
+		<br/><br/>
+		<button id="restart" onClick="restart()">Restart</button>
+		<button id="easyGame" onClick="easyGame()">Easy Game</button>
+		<br/>
+		<br/>
+		<table>
+			<tr>
+				<td id="cell_00" onClick="clickMove(this)"></td>
+				<td id="cell_01" onClick="clickMove(this)"></td>
+				<td id="cell_02" onClick="clickMove(this)"></td>
+				<td id="cell_03" onClick="clickMove(this)"></td>
+			</tr>
+			<tr>
+				<td id="cell_10" onClick="clickMove(this)"></td>
+				<td id="cell_11" onClick="clickMove(this)"></td>
+				<td id="cell_12" onClick="clickMove(this)"></td>
+				<td id="cell_13" onClick="clickMove(this)"></td>
+			</tr>
+			<tr>
+				<td id="cell_20" onClick="clickMove(this)"></td>
+				<td id="cell_21" onClick="clickMove(this)"></td>
+				<td id="cell_22" onClick="clickMove(this)"></td>
+				<td id="cell_23" onClick="clickMove(this)"></td>
+			</tr>
+			<tr>
+				<td id="cell_30" onClick="clickMove(this)"></td>
+				<td id="cell_31" onClick="clickMove(this)"></td>
+				<td id="cell_32" onClick="clickMove(this)"></td>
+				<td id="cell_33" onClick="clickMove(this)"></td>
+			</tr>
+		</table>
+		<p id="winningText"></h2>
+		<p id="promptRestart"></h3>
+	</body>
+</html>
